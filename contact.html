@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CONTACT</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="popper.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>	
+	<link rel="stylesheet" type="text/css" href="Master.css">
+	<script type="text/javascript" src="Contact.js"></script>
+
+	<style type="text/css">
+		label{
+			font-weight: bolder;
+			font-size: 18px;
+		}
+		.logo-img{
+		height:50px;
+		width:200px;
+		}
+		
+		span{
+			font-style: italic;
+			color: red;
+			font-size: 16px;
+		}
+		.details{
+		margin-top:30px;
+		}
+		#sub1{
+		margin:auto;
+		}
+	</style>
+</head>
+<body>
+   
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+		<div class="container-fluid">
+			<img src="img/eyelook-img.png" class="logo-img"/>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+                <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item " style="font-size: 17px;"><a class="nav-link" href="index.html"
+                                style="width: 100px; text-align: center;">HOME</a></li>
+                        <li class="nav-item "> <a class="nav-link"
+                                style="width: 90px; text-align: center;" href="sunglasses.html" >SUNGLASSES</a></li>
+                        <li class="nav-item "><a class="nav-link" href="eyeglasses.html"
+                                style="width: 140px; text-align: center;">EYEGLASSES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="computer-glasses.html"
+                                style="width: 170px; text-align: center;">COMPUTER-GLASSES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="our-collection.html"
+                                style="width: 160px; text-align: center;">OUR COLLECTION</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="contact.html"style="border-bottom: 3px solid #77b300"
+                                style="width: 130px; text-align: center;">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+      
+	
+      <section>
+
+		<div class="container mt-3">
+			<div class="contact" style= "border:3px solid  #A92CCD; border-radius: 20px;">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<h2 style="text-align: center; padding-top: 15px; font-family:Baskerville Old Face;color:navy">
+							<br>Please Fill out the below details.</h2><br>
+					</div><br><br>
+
+					<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 mx-auto">
+						<form class="form-inline" name="form1" class="frm_message" method="post" autocomplete="off"
+							onsubmit="return Reg()" style="padding-bottom: 20px;">
+
+							<div class="form-group col-12 col-sm-12 col-md-6">
+								<label for="Fname">FIRST NAME:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+								<input type="text" class="form-control" id="Fname" placeholder="Enter First Name"
+									name="Fname" required=""><span id="Fnamemsg"></span>
+								
+								
+							</div>
+							<div class="form-group col-12 col-sm-12 col-md-6">	
+							<label for="Lname">LAST NAME:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+								<input type="text" class="form-control" id="Lname" placeholder="Enter Last Name"
+									name="Lname" required=""><span id="Lnamemsg" required=""></span>
+								</div><br><br><br>
+
+							
+
+							<div class="form-group col-12 col-sm-12 col-md-6">
+								<label for="Cnumber">CONTACT NO:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+								<input type="number" class="form-control" id="Cnumber" placeholder="Enter Contact No"
+									name="Cnumber" required=""> <span id="mobilemsg"></span>
+								&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+							</div>
+							<div class="form-group col-12 col-sm-12 col-md-6">
+							<label for="email">EMAIL:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+								<input type="email" class="form-control" id="email" placeholder="Enter Email"
+									name="email" required=""> <span id="emailmsg"></span>
+							</div><br><br>
+							<div class="form-group col-12 col-sm-12 col-md-6">
+								<label for="Adults">LEFT(OD):&nbsp;</label>
+								<input type="number" class="form-control" id="adults"
+									placeholder="Enter Number of Adults" name="Guest" required=""> <span
+									id="adultsmsg"></span>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								
+							</div>
+							<div class="form-group col-12 col-sm-12 col-md-6">
+							<label for="Childrens">RIGHT(OD):&nbsp;&nbsp;&nbsp;</label>
+							<input type="number" class="form-control" id="childrens"
+								placeholder="Enter Number of Child" name="childrens" required=""> <span
+								id="childrensmsg"></span>
+
+							</div>
+							<br><br>
+
+							<div class="form-group col-12 col-sm-12 col-md-6">
+								<label for="room">FRAME TYPES:</label>
+								<select class="form-control" name="bodytype" id="bodytype" required="">
+									<option value="0">- Frame Types -</option>
+									<option value="1">Round Frame</option>
+									<option value="2">Oval Frame</option>
+									<option value="3">Cat Shape Frame</option>
+									<option value="4">Square Frame </option>
+									<option value="5">Rectangle Frame</option>
+									<option value="6">Oversized Frame</option>
+									<option value="7">Geometric Frame</option>
+									<option value="8">Butterfly Frame</option>
+								</select> <span id="roomtypemsg"></span>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+								
+							</div>
+							
+							<div class="form-group col-12 col-sm-12 col-md-6">
+							<label for="idno">ID PROOF.
+								:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+							<input type="number" class="form-control" id="idcard" placeholder="Enter Number ID"
+								name="card" required=""> <span id="cardsmsg"></span>
+							</div>
+							<br><br>
+							
+							
+
+							<div class="form-group col-12 col-sm-12 col-md-6">
+								<label for="date">BIRTH-DATE:&nbsp;&nbsp;</label>
+								<input type="date" class="form-control" id="date" name="datein" required=""> <span
+									id="datemsg"></span>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+								
+							</div>
+							<div class="form-group col-12 col-sm-12 col-md-6">
+							<label for="date">ADDRESS:&nbsp;&nbsp;</label>
+								<input type="textbox" class="form-control" id="date" name="dateout" required=""> <span
+									id="datemsg"></span>
+								</div><br><br><br><br><br>
+
+								<div class="col-12 col-lg-8 mx-auto">
+								<input
+									style="font-size: 18px; width: 120px; background: #77b300; border:1px solid #77b300;"
+									type="submit" name="" value="SUBMIT" class="btn btn-primary mx-5" data-toggle="modal" data-target="#exampleModal">
+								<input style="font-size: 18px; width: 120px;" type="Reset" name="" value="RESET"
+									class="btn btn-danger">
+								</div>
+						</form>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">REGISTRATION SUCCESSFUL !!</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  Your Details Has Been Successfully Submitted. Thank You !
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><br> 
+<footer class="bg-dark">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h4>@ 2023 EYELOOKS . All Copy Rights Reserved. </h4>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
